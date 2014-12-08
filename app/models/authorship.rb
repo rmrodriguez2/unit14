@@ -1,5 +1,5 @@
 class Authorship < ActiveRecord::Base
-  has_many :book
-  has_many :author
-  has_many :publisher
+  belongs_to :book
+  belongs_to :author
+  belongs_to :publisher
 end
